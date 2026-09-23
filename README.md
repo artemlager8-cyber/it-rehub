@@ -21,6 +21,8 @@ npm run package   # сборка в out/ + архив it-rehub-site.zip для �
 
 - **cPanel / ISPmanager (ps.kz, hoster.kz и т.п.)**: загрузить архив в `public_html`, распаковать там.
   Файл `.htaccess` уже внутри: 404-страница, кэш. После выпуска SSL раскомментировать в нём редирект на https.
+- **Cloudflare Workers + GitHub** (автосборка при `git push`): настройки берутся из `wrangler.jsonc`.
+  В Settings → Build: Build command `npm run build`, Deploy command `npx wrangler deploy`. Имя воркера должно совпадать с `name` в `wrangler.jsonc`.
 - **Cloudflare Pages**: Create project → Direct Upload → папка `out`. Файл `_headers` подхватится сам.
 - **nginx**: `root` на папку, `error_page 404 /404.html;`, `try_files $uri $uri/ =404;`.
 

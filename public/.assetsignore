@@ -1,0 +1,2 @@
+# Files in out/ that Cloudflare Workers should not publish (.htaccess is for Apache hosts only)
+.htaccess
