@@ -1,7 +1,7 @@
 // Cloudflare Workers deploy: the site is a static export, so the Worker only serves files from out/.
 // Workers Builds settings: Build command `npm run build`, Deploy command `npx wrangler deploy`.
 {
-  "name": "it-rehub",
+  "name": "it-rehub1",
   "compatibility_date": "2026-09-01",
   "assets": {
     "directory": "./out",
