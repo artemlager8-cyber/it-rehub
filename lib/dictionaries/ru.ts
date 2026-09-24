@@ -12,7 +12,8 @@ export const ru = {
     close: "Закрыть",
     language: "Язык",
     phone: "Телефон",
-    email: "Почта"
+    email: "Почта",
+    emailSubject: "Запрос с сайта IT Rehub"
   },
   nav: {
     product: "Продукт",

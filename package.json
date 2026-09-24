@@ -7,7 +7,11 @@
     "build": "next build",
     "start": "npx serve out",
     "lint": "eslint",
-    "package": "next build && node scripts/package.mjs"
+    "package": "next build && node scripts/package.mjs",
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "deploy:check": "npm run build && wrangler deploy --dry-run",
+    "cloudflare:deploy": "wrangler deploy"
   },
   "dependencies": {
     "next": "16.3.3",
@@ -21,6 +25,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.138.0"
   }
 }

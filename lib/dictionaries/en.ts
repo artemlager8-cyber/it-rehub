@@ -14,7 +14,8 @@ export const en: Dictionary = {
     close: "Close",
     language: "Language",
     phone: "Phone",
-    email: "Email"
+    email: "Email",
+    emailSubject: "Request from the IT Rehub website"
   },
   nav: {
     product: "Product",

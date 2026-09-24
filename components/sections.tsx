@@ -1,5 +1,5 @@
 import type { Dictionary } from "@/lib/i18n";
-import { site } from "@/lib/site";
+import { emailLink, site } from "@/lib/site";
 import { CheckIcon } from "./icons";
 import { Logo, LogoMark } from "./logo";
 import { WhatsAppButton } from "./whatsapp-button";
@@ -61,7 +61,7 @@ export function FinalCta({ dict }: { dict: Dictionary }) {
           <WhatsAppButton message={dict.common.whatsappMessage} label={dict.common.cta} />
           <div className="final-contacts">
             <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
-            <a href={`mailto:${site.email}`}>{site.email}</a>
+            <a href={emailLink(dict.common.emailSubject)}>{site.email}</a>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ export function Footer({ dict }: { dict: Dictionary }) {
         <div>
           <p className="footer-label">{dict.footer.contacts}</p>
           <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
+          <a href={emailLink(dict.common.emailSubject)}>{site.email}</a>
           <a href={`https://wa.me/${site.phone.replace(/\D/g, "")}`} target="_blank" rel="noreferrer">
             WhatsApp
           </a>

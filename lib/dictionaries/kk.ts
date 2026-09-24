@@ -14,7 +14,8 @@ export const kk: Dictionary = {
     close: "Жабу",
     language: "Тіл",
     phone: "Телефон",
-    email: "Пошта"
+    email: "Пошта",
+    emailSubject: "IT Rehub сайтынан өтінім"
   },
   nav: {
     product: "Өнім",

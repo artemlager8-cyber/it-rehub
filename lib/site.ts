@@ -8,3 +8,6 @@ export const site = {
 
 export const whatsappLink = (message: string) =>
   `https://wa.me/${site.phone.replace(/\D/g, "")}?text=${encodeURIComponent(message)}`;
+
+export const emailLink = (subject: string) =>
+  `mailto:${site.email}?subject=${encodeURIComponent(subject)}`;

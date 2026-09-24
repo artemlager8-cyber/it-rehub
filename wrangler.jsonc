@@ -1,8 +1,9 @@
 // Cloudflare Workers deploy: the site is a static export, so the Worker only serves files from out/.
-// Workers Builds settings: Build command `npm run build`, Deploy command `npx wrangler deploy`.
+// Workers Builds settings: Build command `npm run build`, Deploy command `npm run cloudflare:deploy`.
 {
+  "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "it-rehub1",
-  "compatibility_date": "2026-09-01",
+  "compatibility_date": "2026-09-24",
   "assets": {
     "directory": "./out",
     // Unknown URLs get out/404.html with a 404 status
